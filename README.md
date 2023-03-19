@@ -1,2 +1,2 @@
-# BF2042WeaponRoulette
-Battlefield 2042 Weapon Roulette
+# WeaponRoulette-2042
+このリポジトリは某2042年のゲーム内にある2042メインウェポンの名前をランダムで表示してくれます。
