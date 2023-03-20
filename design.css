@@ -1,0 +1,38 @@
+@charset "UTF-8";
+.maindiv{
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    margin: 0 auto;
+    
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+.texts{
+    text-align: center;
+}
+.textresult{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    height: 30px;
+}
+.rbutton{
+    font-size: 30px;
+    width: 250px;
+    height: 100px;
+    background-color: #26ffdf;
+    border-radius: 5px;
+    border: none;
+    transition: 0.3s;
+    text-align: center;
+}
+.rbutton:hover{
+    transform: scale(1.05);
+}
+.rbuttondiv{
+    padding-top: 40px;
+    text-align: center;
+}
