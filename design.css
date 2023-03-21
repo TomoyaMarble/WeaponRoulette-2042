@@ -1,4 +1,7 @@
 @charset "UTF-8";
+body{
+    background-color: #161616;
+}
 .maindiv{
     width: 100%;
     max-width: 650px;
@@ -9,21 +12,26 @@
 h1{
     text-align: center;
     font-size: 50px;
+    color: #26ffdf;
 }
 .texts{
     text-align: center;
+    color: white;
 }
 .textresult{
     text-align: center;
     font-weight: bold;
     font-size: 30px;
     height: 30px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    color: white;
 }
 .rbutton{
     font-size: 30px;
     width: 250px;
     height: 100px;
-    background-color: #26ffdf;
+    background-color: orange;
     border-radius: 5px;
     border: none;
     transition: 0.3s;
@@ -35,4 +43,13 @@ h1{
 .rbuttondiv{
     padding-top: 40px;
     text-align: center;
+}
+#mode-select{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 24px;
+    border-radius: 5px;
 }
