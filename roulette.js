@@ -1,11 +1,15 @@
 function ramdom_up() {
-    const weapons_M = ["PBX-45", "PP-29", "MP9", "K30", "AC9", "M5A3", "AM40", "AK-24", "SFAR-M GL", "AC-42", "RM68", "LCMG", "アバンシーズ", "PKP-BP", "RPT-31", "DM7", "SVK", "VCAR", "BSV-M", "SWS-10", "DXR-1", "NTW-50", "MCS-880", "GVT 45-70", "12M オート", "ゴーストメーカーR10", "Rorsch Mk-4", "NVK-S22"];
-    const weapons_S = ["G57" , "MP28" , "M44" , "PF51" , "NVK-P125" , "Super 500"];
+    const weapons_M = ["PBX-45", "PP-29", "MP9", "K30", "AC9", "M5A3", "AM40", "AK-24", "SFAR-M GL", "AC-42", "RM68", "LCMG", "アバンシーズ", "PKP-BP", "RPT-31", "DM7", "SVK", "VCAR", "BSV-M", "SWS-10", "DXR-1", "NTW-50", "MCS-880", "GVT 45-70", "12M オート", "ゴーストメーカーR10", "Rorsch Mk-4", "NVK-S22", "AKS-74U", "PP-2000", "M16A3", "ACW-R", "A-91", "M416", "MTAR-21", "M60E4", "XM8 LMG", "M240B", "Type 88 LMG", "M39 EMR", "SVD", "GOL スナイパーマグナム"];
+    const weapons_M_2042 = ["PBX-45", "PP-29", "MP9", "K30", "AC9", "M5A3", "AM40", "AK-24", "SFAR-M GL", "AC-42", "RM68", "LCMG", "アバンシーズ", "PKP-BP", "RPT-31", "DM7", "SVK", "VCAR", "BSV-M", "SWS-10", "DXR-1", "NTW-50", "MCS-880", "GVT 45-70", "12M オート", "ゴーストメーカーR10", "Rorsch Mk-4", "NVK-S22"];
+    const weapons_M_vault = ["AKS-74U", "PP-2000", "M16A3", "ACW-R", "A-91", "M416", "MTAR-21", "M60E4", "XM8 LMG", "M240B", "Type 88 LMG", "M39 EMR", "SVD", "GOL スナイパーマグナム"];
+    const weapons_S = ["G57", "MP28", "M44", "PF51", "NVK-P125", "Super 500", "M1911", "MP412 REX", "M93R"];
+    const weapons_S_2042 = ["G57", "MP28", "M44", "PF51", "NVK-P125", "Super 500"];
+    const weapons_S_vault = ["M1911", "MP412 REX", "M93R"];
     const gadgets_A = ["スモークランチャー", "IBA装甲板", "C5爆薬", "M18 クレイモア", "SPHエクスプローシブ・ランチャー"];
     const gadgets_E = ["対戦車地雷", "無反動M5", "FXM-33対空ミサイル", "C5爆薬", "FGM-148 ジャベリン", "EODボット"];
-    const gadgets_S = ["弾薬箱" , "医療箱" , "スモークランチャー" , "M18 クレイモア"];
-    const gadgets_R = ["T-UGS" , "トレーサーダーツガン" , "C5爆薬" , "近接センサー"];
-    const throwable = ["破片手榴弾" , "発煙弾" , "EMPグレネード" , "焼夷グレネード" , "コンカッショングレネード" , "スローイングナイフ"];
+    const gadgets_S = ["弾薬箱", "医療箱", "スモークランチャー", "M18 クレイモア"];
+    const gadgets_R = ["T-UGS", "トレーサーダーツガン", "C5爆薬", "近接センサー"];
+    const throwable = ["破片手榴弾", "発煙弾", "EMPグレネード", "焼夷グレネード", "コンカッショングレネード", "スローイングナイフ"];
     const text = document.getElementById("ywi");
     const sel = document.getElementById("mode-select");
     let random = 0;
@@ -14,9 +18,25 @@ function ramdom_up() {
             random = parseInt(Math.random() * weapons_M.length);
             document.getElementById('ywi').textContent = weapons_M[random];
             break;
+        case "wm_2042":
+            random = parseInt(Math.random() * weapons_M_2042.length);
+            document.getElementById('ywi').textContent = weapons_M_2042[random];
+            break;
+        case "wm_vault":
+            random = parseInt(Math.random() * weapons_M_vault.length);
+            document.getElementById('ywi').textContent = weapons_M_vault[random];
+            break;
         case "ws":
             random = parseInt(Math.random() * weapons_S.length);
             document.getElementById('ywi').textContent = weapons_S[random];
+            break;
+        case "ws_2042":
+            random = parseInt(Math.random() * weapons_S_2042.length);
+            document.getElementById('ywi').textContent = weapons_S_2042[random];
+            break;
+        case "ws_vault":
+            random = parseInt(Math.random() * weapons_S_vault.length);
+            document.getElementById('ywi').textContent = weapons_S_vault[random];
             break;
         case "ag":
             random = parseInt(Math.random() * gadgets_A.length);
