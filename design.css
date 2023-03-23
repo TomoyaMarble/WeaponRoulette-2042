@@ -36,6 +36,7 @@ h1{
     border: none;
     transition: 0.3s;
     text-align: center;
+    color: black;
 }
 .rbutton:hover{
     transform: scale(1.05);
